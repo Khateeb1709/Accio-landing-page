@@ -479,10 +479,6 @@ main {
 }
 
 @media only screen and (max-width: 1145px) {
-  .hero-col-1 > h1 {
-    font-size: 35px;
-  }
-
   .my-divs {
     padding: 0px !important;
   }
@@ -499,6 +495,11 @@ main {
   }
 }
 
+@media only screen and (min-width:981px) and (max-width: 1145px){
+    .hero-col-1 > h1 {
+        font-size: 35px;
+    }
+}
 @media only screen and (max-width: 980px) {
   .hero {
     display: flex;
@@ -512,9 +513,7 @@ main {
     flex-direction: column !important;
     align-items: center !important;
   }
-}
 
-@media only screen and (max-width: 980px) {
   .course-card-container {
     display: flex;
     flex-direction: column;
@@ -524,3 +523,4 @@ main {
     margin-bottom: 20px;
   }
 }
+
