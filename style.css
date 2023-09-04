@@ -244,11 +244,7 @@ main {
 
 .courses-offered {
   background: #ecf8ff;
-  display: flex;
   padding: 80px 0px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 60px;
   z-index: -1;
 }
@@ -280,6 +276,22 @@ main {
 
 #card-1 {
   border: 2px solid #2f80ed;
+  position: relative;
+}
+
+.ideal-tag-on-top {
+  color: #fff;
+  font-family: ABeeZee;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 1;
+  border-radius: 7px;
+  border: 2px solid #2f80ed;
+  background-color: #2f80ed;
+  top: -17px;
 }
 
 .card-title-div > div {
@@ -391,6 +403,10 @@ main {
   font-weight: 400;
   letter-spacing: 1.28px;
   text-transform: uppercase;
+  background: var(--New, linear-gradient(277deg, #992fed 0%, #2f80ed 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .partners-and-mentors-heading > h3 {
@@ -424,7 +440,7 @@ main {
 }
 
 .hiringpartners-banner-div {
-  width: 90% !important;
+  width: 100% !important;
 }
 
 .hiringpartners-banner-div > .partner-rows {
@@ -433,14 +449,10 @@ main {
 
 #placement-report-btn {
   border-radius: 8px;
-  background:#2f80ed;
+  background: #2f80ed;
   border: none;
-  display: flex;
   width: 250px;
   padding: 14px 6px 14px 16px;
-  justify-content: center;
-  align-items: center;
-  gap: 2px;
   color: #fff;
   font-family: ABeeZee;
   font-size: 18px;
@@ -450,28 +462,39 @@ main {
   margin-bottom: 50px;
 }
 
+.my-divs {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.partner-rows {
+  padding: 10px;
+  height: 100px;
+}
+
+.my-divs > img {
+  height: auto;
+  width: 100%;
+}
 
 @media only screen and (max-width: 1145px) {
   .hero-col-1 > h1 {
     font-size: 35px;
   }
 
-  .my-divs{
+  .my-divs {
     padding: 0px !important;
   }
-  .my-divs > img{
-     width: 100% !important;
-  }
-
-  .hiringpartners-banner-div{
+  .my-divs > img {
     width: 100% !important;
   }
 
-  .nav-item > .nav-link{
-      font-size: 14px;
+  .nav-item > .nav-link {
+    font-size: 14px;
   }
 
-  .hero-col-1{
+  .hero-col-1 {
     margin-top: 50px;
   }
 }
@@ -487,13 +510,13 @@ main {
   }
 }
 
-
 @media only screen and (max-width: 980px) {
-    
-    .course-card-container{
-        display: flex;
-        flex-direction: column;
-    }
+  .course-card-container {
+    display: flex;
+    flex-direction: column;
   }
 
-
+  .course-card-container > .my-card {
+    margin-bottom: 20px;
+  }
+}
