@@ -15,12 +15,14 @@
   margin-right: 5px;
 }
 
+.navbar-container{
+    z-index: 1000;
+}
 nav {
   width: 100%;
   padding: 0 30px;
   position: fixed;
   top: 0px;
-  z-index: 1000;
   background-color: white;
 }
 
@@ -42,7 +44,6 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  z-index: 500;
 }
 
 .nav-item {
@@ -240,13 +241,14 @@ nav {
 main {
   margin-inline: 10px;
   padding-inline: 10px;
+  z-index: -101;;
 }
 
 .courses-offered {
   background: #ecf8ff;
   padding: 80px 0px;
   gap: 60px;
-  z-index: -1;
+  z-index: -100;
 }
 
 .courses-title {
@@ -287,7 +289,6 @@ main {
   font-weight: 400;
   text-transform: uppercase;
   position: absolute;
-  z-index: 1;
   border-radius: 7px;
   border: 2px solid #2f80ed;
   background-color: #2f80ed;
@@ -299,12 +300,11 @@ main {
 }
 
 .card-title-div > div > h4 {
-  color: var(--BLACK, #2b2f34);
+  color: #2b2f34;
   font-family: ABeeZee;
   font-size: 26px;
   font-style: italic;
   font-weight: 400;
-  line-height: normal;
   margin: 0px;
 }
 
@@ -505,8 +505,12 @@ main {
     flex-direction: column;
     align-items: center;
   }
-  .hero-col-1 {
-    margin-bottom: 20px;
+
+  .hero > .hero-col-1 {
+    margin-bottom: 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
   }
 }
 
